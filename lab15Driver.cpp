@@ -15,6 +15,12 @@ int main() {
         // Compute the number of possible ways
         double ways = computeWays(n, k);
 
+        // Check if ways is zero, meaning it's impossible to draw
+        if (ways == 0) {
+            cout << "Impossible scenario!" << endl;
+            return 1;
+        }
+
         // Compute the probability of winning
         double probability = 1.0 / ways;
 
@@ -34,3 +40,4 @@ int main() {
 
     return 0;
 }
+
