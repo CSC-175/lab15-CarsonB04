@@ -9,7 +9,7 @@ double factorial(int);
 
 /*******************************************************************
 * getLotteryInfo                                                   *
-* Gets and validates lottery info from the user and places it in   *
+* gets and validates lottery info from the user and places it in   *
 * reference parameters referencing variables in the main function. *
 ********************************************************************/
 void getInfo(int &n, int &k) {
