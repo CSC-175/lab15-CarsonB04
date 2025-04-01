@@ -51,6 +51,11 @@ void getInfo(int &n, int &k) {
 * This formula calculates the number of combinations (n choose k). *
 ********************************************************************/
 double computeWays(int n, int k) {
+    if (k > n) {
+        return 0;  // Can't choose more balls than available
+    }
+
+    // Return the number of combinations (n choose k) using the formula n! / (k!(n-k)!)
     return factorial(n) / (factorial(k) * factorial(n - k));
 }
 
@@ -64,5 +69,7 @@ double factorial(int num) {
     }
     return num * factorial(num - 1);
 }
+
+
 
 
